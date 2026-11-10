@@ -1,0 +1,28 @@
+# Local configuration and runtime state
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.log
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.cache/
+dist/
+build/
+coverage/
+htmlcov/
+node_modules/
+runtime-data/
+artifacts/
+
+# Agent runtime state; generated Spec Kit skills remain tracked
+.agents/.cache/
+.agents/auth/
+.agents/sessions/
+.codex/

@@ -1,0 +1,663 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R] /Count 12 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Title (Rencana Proyek Akhir Cybersecurity - KampusMart) /Author (Codex) /Subject (Rencana lab pentest terisolasi untuk 65 mahasiswa) >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1876 >>
+stream
+q 0.07 0.17 0.30 rg 0 520 595 322 re f Q
+q 0.10 0.55 0.58 rg 0 500 595 20 re f Q
+0.77 0.89 0.96 rg BT /F2 11 Tf 1 0 0 1 48 785 Tm (STUDI INDEPENDEN CYBERSECURITY) Tj ET
+1 1 1 rg BT /F2 25 Tf 1 0 0 1 48 735 Tm (RENCANA PROYEK AKHIR) Tj ET
+0.88 0.93 0.98 rg BT /F1 13 Tf 1 0 0 1 48 700 Tm (Pentest lab terisolasi dengan target sengaja rentan) Tj ET
+0.78 0.91 0.96 rg BT /F2 11 Tf 1 0 0 1 48 665 Tm (KampusMart | 65 mahasiswa | 13 kelompok x 5 | 3 varian) Tj ET
+0.88 0.93 0.98 rg BT /F1 10 Tf 1 0 0 1 48 548 Tm (Draft perencanaan instruktur) Tj ET
+0.88 0.93 0.98 rg BT /F1 9 Tf 1 0 0 1 48 529 Tm (13 Oktober 2026) Tj ET
+0.1 0.33 0.46 rg BT /F2 11 Tf 1 0 0 1 48 445 Tm (RINGKASAN) Tj ET
+0.1 0.48 0.55 rg BT /F2 11 Tf 1 0 0 1 52 414 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 11 Tf 1 0 0 1 68 414 Tm (Satu skenario fiktif dengan tiga varian setara.) Tj ET
+0.1 0.48 0.55 rg BT /F2 11 Tf 1 0 0 1 52 387 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 11 Tf 1 0 0 1 68 387 Tm (Setiap kelompok memiliki instance dan data sintetis sendiri.) Tj ET
+0.1 0.48 0.55 rg BT /F2 11 Tf 1 0 0 1 52 360 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 11 Tf 1 0 0 1 68 360 Tm (Tujuan: temukan, buktikan, perbaiki, dan retest kelemahan.) Tj ET
+0.1 0.48 0.55 rg BT /F2 11 Tf 1 0 0 1 52 333 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 11 Tf 1 0 0 1 68 333 Tm (Batas: hanya jaringan lab; tanpa target publik atau data nyata.) Tj ET
+q 0.88 0.92 0.95 rg 48 210 499 1 re f Q
+0.1 0.33 0.46 rg BT /F2 10 Tf 1 0 0 1 48 184 Tm (STRUKTUR KELAS) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 48 160 Tm (Varian A: 5 kelompok     Varian B: 4 kelompok     Varian C: 4 kelompok) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 48 141 Tm (Setiap varian memuat tiga kelas temuan dan dinilai dengan rubrik yang sama.) Tj ET
+0.42 0.45 0.49 rg BT /F1 9 Tf 1 0 0 1 48 122 Tm (Angka infrastruktur adalah estimasi awal yang perlu diuji dengan pilot.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 3907 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (1. Ringkasan keputusan) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 745 Tm (Rencana ini memakai satu skenario fiktif bernama KampusMart dengan tiga varian yang setara.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 732 Tm (Untuk 65 mahasiswa: 13 kelompok berisi lima orang, dibagi ke varian A, B, dan C) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 719 Tm (masing-masing 5, 4, dan 4 kelompok. Setiap kelompok memperoleh instance target terpisah.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 701 Tm (Setiap varian menguji cakupan dan tingkat kesulitan yang sama: satu modul CVE, satu) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 688 Tm (kelemahan kontrol akses, dan satu kelemahan alur bisnis. Yang berubah adalah nama endpoint,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 675 Tm (peran akun, data uji, dan letak kondisi pemicunya. Dengan begitu rubrik tetap seragam,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 662 Tm (sementara menyalin langkah kelompok lain menjadi kurang berguna.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 641 Tm (Keputusan desain) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 624 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 624 Tm (Skenario: KampusMart, toko kebutuhan kampus fiktif dengan web, API, akun mahasiswa,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 611.5 Tm (staf, dan admin.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 596 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 596 Tm (Deployment: satu stack target per kelompok; mahasiswa menjalankan browser dan alat uji) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 583.5 Tm (dari laptop masing-masing.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 568 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 568 Tm (CVE dasar: Apache HTTP Server 2.4.49, CVE-2021-41773, dengan bukti terbatas pada file) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 555.5 Tm (penanda sintetis. Perbaikan diuji dengan versi 2.4.51 atau lebih baru.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 540 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 540 Tm (Cakupan temuan: CVE, kontrol akses berbasis objek, dan validasi alur bisnis.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 524.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 524.5 Tm (Semua akses dibatasi ke jaringan kelas atau localhost; target tidak memiliki jalur ke) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 512 Tm (internet publik.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 496.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 496.5 Tm (Nilai mengutamakan bukti yang dapat diulang, dampak yang terukur, perbaikan, dan retest;) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 484 Tm (bukan jumlah temuan.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 465.5 Tm (Asumsi dan hal yang perlu dikonfirmasi sebelum pelaksanaan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 448.5 Tm (Angka server di dokumen ini adalah titik awal perencanaan, bukan hasil benchmark. Rencana) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 435.5 Tm (kalender memakai delapan milestone yang dapat direntangkan mengikuti durasi studi) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 422.5 Tm (independen. Model hosting akhir perlu dipilih: target di server kampus atau Compose lokal) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 409.5 Tm (pada laptop mahasiswa.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 3910 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (2. Tujuan belajar dan brief mahasiswa) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Hasil belajar) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 725 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 725 Tm (Menentukan batas scope dan membuat peta aset, peran, alur aplikasi, serta endpoint.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 709.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 709.5 Tm (Memeriksa apakah komponen dan konfigurasinya benar-benar memenuhi kondisi sebuah CVE;) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 697 Tm (kecocokan nomor versi saja tidak cukup.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 681.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 681.5 Tm (Menguji kontrol akses dan aturan bisnis menggunakan akun serta data sintetis yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 669 Tm (disediakan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 653.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 653.5 Tm (Membedakan indikasi scanner dari temuan yang sudah direproduksi dan memiliki dampak.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 638 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 638 Tm (Menyusun bukti minimal, menjelaskan akar masalah, mengusulkan perbaikan, lalu) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 625.5 Tm (membuktikan retest.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 607 Tm (Brief proyek untuk mahasiswa) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 590 Tm (KampusMart meminta tim melakukan penetration test terbatas terhadap instance yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 577 Tm (ditugaskan. Tujuan tim adalah menemukan kelemahan yang dapat dibuktikan, menjelaskan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 564 Tm (dampaknya pada akun dan data fiktif, serta memberikan rekomendasi yang dapat diuji. Scope) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 551 Tm (hanya mencakup alamat, akun, dan layanan di lembar penugasan tim.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 533 Tm (Tidak ada pengujian terhadap sistem kampus sungguhan, akun di luar lab, jaringan internet,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 520 Tm (atau layanan kelompok lain. Mahasiswa tidak diminta menghapus data, melakukan denial of) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 507 Tm (service, mempertahankan akses, atau mengambil data selain marker sintetis yang disediakan.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 486 Tm (Alur dan peran aplikasi) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 469 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 469 Tm (Mahasiswa: melihat produk, membuat pesanan, membaca invoice, dan mengirim tiket bantuan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 453.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 453.5 Tm (Staf toko: mengelola status pesanan dan menangani tiket.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 438 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 438 Tm (Admin: mengelola katalog dan melihat ringkasan operasional.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 422.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 422.5 Tm (Data uji: nama fiktif, alamat contoh, invoice buatan, dan produk nonnyata. Jangan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 410 Tm (memakai data pribadi atau kredensial sungguhan.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 3) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 4519 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (3. Spesifikasi target dan temuan yang ditanam) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Komponen target) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 725 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 725 Tm (Web app: antarmuka KampusMart dengan login, katalog, checkout, invoice, dan tiket) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 712.5 Tm (bantuan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 697 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 697 Tm (API: endpoint untuk profil, pesanan, invoice, kupon, dan tiket.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 681.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 681.5 Tm (Database: satu database per kelompok dengan fixture sintetis dan akun berperan berbeda.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 666 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 666 Tm (Layanan CVE: container Apache terpisah dari aplikasi utama, hanya dapat dijangkau dari) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 653.5 Tm (jaringan kelas.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 638 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 638 Tm (Observability: log request dan log aplikasi yang dapat dibaca pengajar; tidak perlu) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 625.5 Tm (menyimpan token autentikasi mahasiswa.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 607 Tm (Tiga kelas temuan yang sama di semua varian) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 590 Tm (1\) CVE Apache path traversal: layanan uji memakai build terdampak yang telah dipatok. Tujuan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 577 Tm (pembuktian hanya membaca marker sintetis yang disiapkan pengajar. Jangan menambahkan CGI) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 564 Tm (atau perilaku eksekusi kode sebagai bagian wajib. Catat kondisi konfigurasi yang dibutuhkan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 551 Tm (dan validasi advisory resmi.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 533 Tm (2\) Broken object-level authorization: akun berperan rendah mencoba membaca satu objek) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 520 Tm (pesanan, invoice, atau tiket milik akun uji lain. Hasil yang diterima hanya record sintetis) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 507 Tm (dalam instance kelompok itu.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 489 Tm (3\) Business logic / workflow: aturan kupon, status pesanan, atau refund menerima transisi) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 476 Tm (yang tidak semestinya. Dampak dibuat terbatas dan dapat direset; jangan menghubungkan ke) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 463 Tm (pembayaran atau layanan eksternal.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 442 Tm (Kriteria tiap temuan) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 425 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 425 Tm (Ada kondisi awal, akun uji, langkah reproduksi tingkat tinggi, respons atau bukti yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 412.5 Tm (diamati, dan hasil yang diharapkan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 397 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 397 Tm (Dampak menunjukkan akses/perubahan terhadap data sintetis atau aturan bisnis simulasi,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 384.5 Tm (bukan klaim yang tidak didukung.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 369 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 369 Tm (Rekomendasi menunjuk kontrol yang harus diperbaiki; retest membuktikan kondisi rentan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 356.5 Tm (tidak lagi terjadi.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 341 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 341 Tm (Temuan duplikat antar kelompok tidak mengurangi nilai bila analisis, bukti, dan retest) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 328.5 Tm (kelompok tersebut mandiri.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 4) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 4414 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (4. Rancangan tiga varian dan keadilan penilaian) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 745 Tm (Semua varian berasal dari satu codebase atau template konfigurasi yang sama. Hindari) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 732 Tm (memelihara tiga aplikasi yang tumbuh terpisah. Buat manifest per varian yang menetapkan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 719 Tm (route, akun, ID objek, kondisi workflow, marker, serta daftar expected findings untuk) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 706 Tm (pengajar.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 685 Tm (Varian A - Fokus pesanan) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 668 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 668 Tm (Kelompok: 5. Endpoint kontrol akses berpusat pada pesanan dan invoice; variasi workflow) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 655.5 Tm (berada di aturan kupon.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 640 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 640 Tm (Data: ID pesanan dan akun berbeda untuk tiap kelompok; CVE service dan tingkat bukti) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 627.5 Tm (sama dengan varian lain.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 609 Tm (Varian B - Fokus invoice dan tiket) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 592 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 592 Tm (Kelompok: 4. Jalur kontrol akses berada di invoice atau tiket bantuan; variasi workflow) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 579.5 Tm (ada pada perubahan status pesanan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 564 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 564 Tm (Nama route, urutan record, dan akun berbeda; jumlah serta dampak maksimal temuan tetap) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 551.5 Tm (sama.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 533 Tm (Varian C - Fokus refund) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 516 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 516 Tm (Kelompok: 4. Jalur kontrol akses berada di ringkasan refund; variasi workflow ada pada) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 503.5 Tm (validasi klaim/refund simulasi.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 488 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 488 Tm (Data dan prasyarat berbeda, tetapi bukti sukses tetap record marker sintetis yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 475.5 Tm (setara.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 457 Tm (Aturan kesetaraan) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 440 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 440 Tm (Ketiga varian memuat tiga kelas temuan yang sama dan memerlukan level akses awal yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 427.5 Tm (setara.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 412 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 412 Tm (Samakan panjang alur, jumlah prasyarat, kualitas petunjuk, batas dampak, dan langkah) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 399.5 Tm (retest.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 384 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 384 Tm (Pengajar menjalankan pilot blind test pada setiap varian sebelum kelas dimulai; catat) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 371.5 Tm (waktu penemuan dan titik buntu.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 356 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 356 Tm (Bekukan image/config setelah pilot. Beri setiap kelompok kredensial, data, port atau) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 343.5 Tm (hostname, dan marker unik.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 328 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 328 Tm (Jangan mengumumkan answer key atau membagikan manifest pengajar ke mahasiswa.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 5) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 4398 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (5. Arsitektur lab dan isolasi) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Topologi yang disarankan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 725 Tm (Laptop mahasiswa \(browser, Burp atau ZAP, terminal\) -> VPN kelas atau VLAN lab -> gateway) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 712 Tm (dengan allowlist -> instance target khusus kelompok. Jaringan internal target menghubungkan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 699 Tm (web/API, database, layanan CVE, dan callback sink simulasi bila memang diperlukan. Panel) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 686 Tm (pengajar/log berada di jalur administrasi terpisah.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 668 Tm (Untuk kelas lokal, publikasikan port target hanya ke localhost. Untuk server bersama,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 655 Tm (izinkan akses hanya dari VPN/VLAN kelas dan rentang port yang ditugaskan. Gunakan aturan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 642 Tm (firewall deny-by-default antar kelompok.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 621 Tm (Kontrol teknis minimum) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 604 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 604 Tm (Tidak ada IP publik atau port-forward dari internet ke target.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 588.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 588.5 Tm (Blokir egress dari target. Bila modul perlu callback, arahkan hanya ke sink internal) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 576 Tm (milik lab.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 560.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 560.5 Tm (Jangan hubungkan container target ke jaringan publik sekaligus jaringan internal. Docker) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 548 Tm (Compose mendukung network internal tanpa koneksi eksternal; validasi aturan pada host) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 535.5 Tm (lab.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 520 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 520 Tm (Jangan gunakan privileged container, host networking, mount direktori host yang tidak) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 507.5 Tm (perlu, atau Docker socket.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 492 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 492 Tm (Batasi CPU, RAM, disk, jumlah proses, ukuran upload, dan masa hidup instance.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 476.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 476.5 Tm (Pisahkan volume dan database tiap tim; tidak ada shared writable volume.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 461 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 461 Tm (Gunakan image tag dan digest yang dipatok, SBOM/daftar komponen, serta backup image yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 448.5 Tm (sudah disiapkan offline.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 433 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 433 Tm (Simpan log secukupnya untuk pembelajaran dan debugging; minimalkan token sesi dan data) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 420.5 Tm (pengenal.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 402 Tm (Reset dan pemulihan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 385 Tm (Sediakan reset per kelompok yang menghapus state lab yang dapat dipulihkan, mengisi ulang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 372 Tm (fixture sintetis, memutar ulang akun/marker, dan memeriksa health check. Buat snapshot) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 359 Tm (sebelum sesi. Siapkan tombol suspend seluruh range bila ada salah konfigurasi jaringan,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 346 Tm (lonjakan resource, atau akses keluar yang tidak direncanakan.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 6) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 4451 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (6. Spesifikasi perangkat dan deployment) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Mahasiswa menjalankan target lokal) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 725 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 725 Tm (Minimum praktis per laptop: 4 core, RAM 16 GB, ruang kosong 60-80 GB, dan dukungan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 712.5 Tm (virtualisasi/container yang berfungsi.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 697 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 697 Tm (Lebih nyaman: 8 core dan RAM 32 GB untuk menjalankan target, proxy, browser, dan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 684.5 Tm (beberapa alat bersamaan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 669 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 669 Tm (Target satu kelompok: alokasikan sekitar 2-3 vCPU, RAM 4-6 GB, dan disk 20-40 GB; ukur) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 656.5 Tm (setelah stack dan logging final.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 638 Tm (Server bersama untuk 13 instance target) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 621 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 621 Tm (Titik awal yang disarankan: 24-32 vCPU, RAM 96 GB, NVMe 1 TB, jaringan 1 GbE, backup) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 608.5 Tm (terpisah.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 593 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 593 Tm (RAM 64 GB dapat menjadi konfigurasi hemat jika target ringan dan beban scanner dibatasi;) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 580.5 Tm (uji dengan 13 tim sebelum memutuskan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 565 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 565 Tm (Anggaran ini mengasumsikan mahasiswa memakai laptop untuk attacker tools. Jika server) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 552.5 Tm (juga menampung attacker VM tiap tim, siapkan tambahan sekitar 2 vCPU dan 4 GB RAM per) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 540 Tm (VM; hitung ulang sebelum membeli.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 524.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 524.5 Tm (Sisakan kapasitas untuk OS, log, image cache, monitoring, dan reset serentak; gunakan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 512 Tm (limit per container.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 493.5 Tm (Uji kapasitas sebelum kelas) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 476.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 476.5 Tm (Jalankan 13 instance dengan data penuh dan health checks aktif.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 461 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 461 Tm (Simulasikan pemindaian ringan serentak dan reset dua atau tiga kelompok.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 445.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 445.5 Tm (Pantau CPU, RAM, disk I/O, latensi, log growth, dan koneksi antar kelompok.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 430 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 430 Tm (Jika laptop mahasiswa beragam, sediakan satu server lab sebagai jalur utama dan Compose) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 417.5 Tm (lokal sebagai fallback.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 399 Tm (Pilihan pengelolaan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 382 Tm (Gunakan Docker Compose untuk proof of concept dan pilot. Untuk server multiuser, tempatkan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 369 Tm (tiap kelompok di VM atau namespace/range terisolasi dengan aturan jaringan yang diuji. VM) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 356 Tm (lebih mudah dipahami sebagai batas operasional bagi modul yang mengandung CVE berdampak) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 343 Tm (tinggi.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 7) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 21 0 R >>
+endobj
+21 0 obj
+<< /Length 3431 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (7. Pembagian 13 kelompok dan rotasi peran) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 745 Tm (Kelompok A1-A5 memakai varian A; B1-B4 varian B; C1-C4 varian C. Setiap kelompok berisi lima) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 732 Tm (mahasiswa. Jika jumlah kehadiran berubah, pertahankan ukuran empat sampai lima orang dan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 719 Tm (sesuaikan jumlah instance, bukan menggabungkan dua tim pada satu target.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 698 Tm (Peran awal per kelompok) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 681 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 681 Tm (Koordinator/scope: memegang scope, jadwal, daftar akun, dan pembagian tugas.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 665.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 665.5 Tm (Recon/pemetaan: membuat peta fitur, teknologi yang terlihat, dan endpoint.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 650 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 650 Tm (Web/API: menguji alur aplikasi dan kontrol akses.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 634.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 634.5 Tm (CVE/config: memeriksa advisory, versi, konfigurasi, dan status patch.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 619 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 619 Tm (Evidence/QA: menjaga catatan reproduksi, menguji ulang klaim, serta menyiapkan laporan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 606.5 Tm (dan retest.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 591 Tm (Peran bukan batas kerja. Rotasikan setidaknya sekali sebelum validasi final agar setiap) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 578 Tm (mahasiswa melakukan pengujian langsung. Catat nama pelaksana pada evidence log. Pada) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 565 Tm (presentasi, setiap anggota menjelaskan satu bukti atau retest yang ia kerjakan.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 544 Tm (Aturan kolaborasi) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 527 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 527 Tm (Berbagi konsep dan advisory publik diperbolehkan; jangan menyalin laporan atau bukti) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 514.5 Tm (kelompok lain.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 499 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 499 Tm (Temuan antar tim boleh sama karena target sengaja mengandung pola yang sama; nilai) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 486.5 Tm (berdasarkan kerja dan pembuktian mandiri.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 471 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 471 Tm (Gunakan kanal kelas hanya untuk pertanyaan operasional; detail answer key disimpan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 458.5 Tm (pengajar.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 8) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 23 0 R >>
+endobj
+23 0 obj
+<< /Length 3909 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (8. Rangkaian proyek: delapan milestone) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 745 Tm (Milestone ini adalah urutan kerja yang bisa dipadatkan atau direntangkan. Setiap tahap) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 732 Tm (menghasilkan artefak kecil agar pengajar dapat memberi umpan balik sebelum laporan akhir.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 711 Tm (M0 - Orientasi dan keselamatan) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 694 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 694 Tm (Brief scope, aturan berhenti, setup tools, akun uji, akses target, dan latihan menulis) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 681.5 Tm (request/response dengan data sintetis.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 663 Tm (M1 - Scope dan rencana pengujian) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 646 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 646 Tm (Submit peta aset, peran, batas target, risiko, dan urutan pengujian sebelum melakukan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 633.5 Tm (tes aktif.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 615 Tm (M2 - Recon dan model aplikasi) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 598 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 598 Tm (Petakan halaman, API, alur pesanan, kontrol autentikasi, serta versi komponen yang) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 585.5 Tm (terlihat. Pisahkan fakta, asumsi, dan belum diketahui.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 567 Tm (M3 - Pemeriksaan CVE) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 550 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 550 Tm (Baca advisory primer, catat affected version dan prasyarat konfigurasi, tentukan bukti) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 537.5 Tm (sukses aman, dan bandingkan dengan konfigurasi target.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 519 Tm (M4 - Pengujian kontrol akses dan workflow) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 502 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 502 Tm (Gunakan akun/objek uji yang diberikan. Uji satu perubahan pada satu waktu dan catat) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 489.5 Tm (respons yang relevan.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 471 Tm (M5 - Validasi dampak) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 454 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 454 Tm (Reproduksi temuan pada kondisi bersih; buktikan dampak dengan record marker saja.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 441.5 Tm (Hentikan setelah bukti minimum diperoleh.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 423 Tm (M6 - Remediasi dan retest) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 406 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 406 Tm (Gunakan patch/config yang disediakan atau patch latihan. Ulangi kasus uji untuk) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 393.5 Tm (memastikan temuan tidak lagi dapat direproduksi.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 375 Tm (M7 - Laporan dan presentasi) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 358 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 358 Tm (Kirim laporan final, bukti, rekomendasi, retest, pembagian kontribusi, dan presentasi) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 345.5 Tm (lisan singkat.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 9) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 25 0 R >>
+endobj
+25 0 obj
+<< /Length 4178 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (9. Artefak mahasiswa dan rubrik penilaian) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Paket pengumpulan) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 725 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 725 Tm (Scope statement dan peta permukaan yang sudah disetujui.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 709.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 709.5 Tm (Evidence log bertanggal: tujuan, akun/peran, kondisi awal, request/response yang sudah) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 697 Tm (disanitasi, observasi, dan hasil.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 681.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 681.5 Tm (Laporan tiap temuan: ringkasan, langkah reproduksi, dampak terbatas, akar masalah,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 669 Tm (rekomendasi, dan batasan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 653.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 653.5 Tm (Retest: hasil sebelum/sesudah dan kondisi versi/konfigurasi yang diuji.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 638 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 638 Tm (Lampiran kontribusi individual dan refleksi singkat tentang satu keputusan teknis.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 619.5 Tm (Rubrik 100 poin) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 602.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 602.5 Tm (Scope, disiplin keselamatan, dan pencatatan: 15 poin. Wajib lulus scope gate; aktivitas) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 590 Tm (di luar scope menghentikan pengujian dan ditangani pengajar.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 574.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 574.5 Tm (Metodologi dan pemetaan aplikasi: 10 poin. Cakupan jelas, observasi dapat diverifikasi,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 562 Tm (asumsi diberi label.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 546.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 546.5 Tm (Kualitas reproduksi dan bukti: 20 poin. Kondisi, langkah, respons, dan hasil cukup untuk) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 534 Tm (diulang.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 518.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 518.5 Tm (Validasi dampak: 15 poin. Dampak konkret pada data/aturan sintetis, klaim proporsional.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 503 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 503 Tm (Analisis CVE dan akar masalah: 10 poin. Advisory, versi, prasyarat, dan konfigurasi) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 490.5 Tm (diperiksa.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 475 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 475 Tm (Remediasi dan retest: 15 poin. Rekomendasi mengatasi penyebab, retest menunjukkan hasil.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 459.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 459.5 Tm (Kualitas laporan dan komunikasi: 5 poin. Jelas, singkat, dapat ditindaklanjuti.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 444 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 444 Tm (Pemeriksaan individual: 10 poin. Tiap anggota menjelaskan bukti atau retest yang ia) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 431.5 Tm (lakukan.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 416 Tm (Jangan memberi bonus untuk jumlah request, jumlah payload, atau banyaknya temuan mentah.) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 403 Tm (Temuan scanner tanpa validasi tidak dihitung sebagai temuan terbukti.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 10) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 27 0 R >>
+endobj
+27 0 obj
+<< /Length 4278 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (10. Runbook pengajar dan gerbang kesiapan) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Sebelum cohort) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 725 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 725 Tm (Tetapkan host, zona waktu, durasi, kebijakan akses, dan kontak pengajar untuk) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 712.5 Tm (penghentian lab.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 697 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 697 Tm (Tinjau CVE dari advisory resmi; bangun image pin, cek konfigurasi, uji marker aman, lalu) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 684.5 Tm (patch dan retest.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 669 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 669 Tm (Bangun tiga varian dari template; jalankan pilot blind test dan samakan tingkat) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 656.5 Tm (kesulitan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 641 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 641 Tm (Buat 13 manifest kelompok: varian, endpoint, akun uji, data, target host/port, marker,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 628.5 Tm (dan prosedur reset.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 613 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 613 Tm (Uji isolasi antar tim, blokir egress, akses dari jaringan luar kelas, reset, backup, dan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 600.5 Tm (logging.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 585 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 585 Tm (Buat instructor answer key dan simpan terpisah dari paket mahasiswa.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 566.5 Tm (Awal setiap sesi) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 549.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 549.5 Tm (Pastikan daftar host dan instance sesuai manifest; health check hijau.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 534 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 534 Tm (Ingatkan scope, batas bukti, dan cara melaporkan salah konfigurasi.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 518.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 518.5 Tm (Pantau resource dan log; hentikan instance jika ada trafik keluar atau gangguan lintas) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 506 Tm (kelompok.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 487.5 Tm (Akhir sesi) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 470.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 470.5 Tm (Simpan artefak kelas yang diperlukan, reset instance sesuai kebijakan retensi, dan cek) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 458 Tm (instance kembali sehat.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 442.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 442.5 Tm (Setelah final, nonaktifkan akses mahasiswa, simpan rubrik dan versi image, lalu matikan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 430 Tm (range.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 411.5 Tm (Gate go/no-go) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 394.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 394.5 Tm (GO hanya jika scope tertulis, target terisolasi, semua varian lulus pilot, CVE proof) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 382 Tm (dibatasi, reset bekerja, dan owner operasional tersedia.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 366.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 366.5 Tm (NO-GO jika target dapat dijangkau dari internet publik, egress belum dibatasi, marker) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 354 Tm (menyentuh data nyata, atau patch/retest tidak dapat direproduksi.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 11) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 29 0 R >>
+endobj
+29 0 obj
+<< /Length 5589 >>
+stream
+q 0.91 0.94 0.97 rg 0 802 595 40 re f Q
+0.11 0.22 0.36 rg BT /F2 8 Tf 1 0 0 1 42 817 Tm (STUDI INDEPENDEN CYBERSECURITY  |  RENCANA PROYEK AKHIR) Tj ET
+q 0.12 0.48 0.55 RG 42 798 m 553 798 l S Q
+0.1 0.25 0.4 rg BT /F2 15 Tf 1 0 0 1 48 771 Tm (11. Risiko utama, mitigasi, dan referensi) Tj ET
+q 0.13 0.52 0.58 RG 48 763 m 170 763 l S Q
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 742 Tm (Risiko operasional) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 725 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 725 Tm (Target rentan terekspos keluar: gunakan VPN/VLAN, firewall deny-by-default, tanpa IP) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 712.5 Tm (publik, dan uji dari jaringan nonkelas.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 697 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 697 Tm (Serangan antar kelompok: instance, database, volume, kredensial, serta aturan jaringan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 684.5 Tm (per kelompok.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 669 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 669 Tm (Scanner menghabiskan resource: batasi rate/beban melalui aturan kelas, CPU/RAM quota,) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 656.5 Tm (monitoring, dan tombol suspend.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 641 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 641 Tm (Perbedaan kesulitan varian: satu template kode, pilot blind, rubrik bersama, manifest) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 628.5 Tm (pengajar.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 613 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 613 Tm (CVE/build tidak konsisten: pin versi dan digest, simpan image offline, catat advisory) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 600.5 Tm (serta syarat konfigurasi, retest sebelum cohort.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 585 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 585 Tm (Data sensitif masuk log: hanya data sintetis, minimisasi log, dan prosedur hapus/reset) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 572.5 Tm (yang teruji.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 554 Tm (Referensi primer) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 537 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 537 Tm (OWASP Juice Shop, aplikasi latihan rentan yang mencakup banyak kategori keamanan web:) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 524.5 Tm (https://devguide.owasp.org/en/07-training-education/01-vulnerable-apps/01-juice-shop/) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 509 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 509 Tm (OWASP WebGoat, lingkungan latihan aplikasi web yang sengaja rentan:) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 496.5 Tm (https://owasp.org/projects/webgoat?tab=start) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 481 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 481 Tm (Apache HTTP Server Security Vulnerabilities, affected versions, syarat, dan perbaikan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 468.5 Tm (CVE-2021-41773/CVE-2021-42013: https://httpd.apache.org/security/vulnerabilities_24.html) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 453 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 453 Tm (NVD CVE-2021-44228 untuk penilaian Log4Shell sebagai modul lanjutan, bukan baseline:) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 440.5 Tm (https://nvd.nist.gov/vuln/detail/CVE-2021-44228) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 425 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 425 Tm (Docker Compose networking, termasuk jaringan internal tanpa konektivitas eksternal:) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 412.5 Tm (https://docs.docker.com/compose/how-tos/networking/) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 397 Tm (Catatan CVE: Apache 2.4.49/2.4.50 dan CVE terkait memiliki syarat konfigurasi yang harus) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 384 Tm (dikaji dari advisory. Rencana ini membatasi bukti pada marker sintetis dan tidak menjadikan) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 371 Tm (eksekusi kode sebagai target latihan. NVD dan advisory vendor dapat berubah; pengajar harus) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.5 Tf 1 0 0 1 49 358 Tm (mengulang pemeriksaan versi dan prasyarat tepat sebelum image dibekukan.) Tj ET
+0.1 0.33 0.46 rg BT /F2 11.5 Tf 1 0 0 1 48 337 Tm (Keputusan lanjutan untuk pengajar) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 320 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 320 Tm (Pilih server kampus terisolasi atau deployment lokal per kelompok.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 304.5 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 304.5 Tm (Tentukan tanggal dan panjang kalender; milestone delapan tahap dapat disesuaikan.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 289 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 289 Tm (Setujui CVE dasar setelah pilot build berhasil; bila tidak stabil, gunakan challenge) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 276.5 Tm (simulasi yang setara.) Tj ET
+0.1 0.45 0.52 rg BT /F2 9.5 Tf 1 0 0 1 51 261 Tm (-) Tj ET
+0.16 0.19 0.23 rg BT /F1 9.3 Tf 1 0 0 1 64 261 Tm (Tentukan siapa yang bertanggung jawab atas host, VPN, backup, dan penghentian lab.) Tj ET
+q 0.78 0.82 0.86 RG 42 44 m 553 44 l S Q
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 42 28 Tm (Rencana instruktur | KampusMart | 13 Oktober 2026) Tj ET
+0.4 0.44 0.49 rg BT /F1 7 Tf 1 0 0 1 505 28 Tm (Halaman 12) Tj ET
+endstream
+endobj
+xref
+0 30
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000192 00000 n 
+0000000262 00000 n 
+0000000337 00000 n 
+0000000492 00000 n 
+0000000628 00000 n 
+0000002556 00000 n 
+0000002692 00000 n 
+0000006651 00000 n 
+0000006789 00000 n 
+0000010752 00000 n 
+0000010890 00000 n 
+0000015462 00000 n 
+0000015600 00000 n 
+0000020067 00000 n 
+0000020205 00000 n 
+0000024656 00000 n 
+0000024794 00000 n 
+0000029298 00000 n 
+0000029436 00000 n 
+0000032920 00000 n 
+0000033058 00000 n 
+0000037020 00000 n 
+0000037158 00000 n 
+0000041389 00000 n 
+0000041527 00000 n 
+0000045858 00000 n 
+0000045996 00000 n 
+trailer
+<< /Size 30 /Root 1 0 R /Info 5 0 R >>
+startxref
+51638
+%%EOF
+

@@ -20,6 +20,8 @@ htmlcov/
 node_modules/
 runtime-data/
 artifacts/
+packages/
+run/
 instructor-private/
 holdout-private/
 secrets/

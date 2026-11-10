@@ -1,0 +1,7 @@
+Selamat datang di layanan dokumen lama KampusMart.
+
+Dokumen publik yang tersedia:
+- welcome.txt
+- panduan-pengembalian.txt
+
+Layanan ini hanya untuk arsip sintetis lab SIB 2026.

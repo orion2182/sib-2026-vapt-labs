@@ -1,0 +1,5 @@
+KM-MARKER-4F9A2C
+
+Synthetic marker for the KampusMart legacy document service.
+Group 1 minimum proof, exposed only by the vulnerable build.
+This file is fictional lab data and contains no real information.

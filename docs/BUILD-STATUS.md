@@ -43,10 +43,31 @@ Updated 2026-11-10. This file records what actually runs, not what is planned.
 - Port-conflict handling was added to `tools/lab.ps1` after a stale server on the
   same port produced a false healthy reading.
 
+### EventPass (feature 004)
+
+- Normal flows: event list/detail, ticket creation, allowed display-name update,
+  review posting, first check-in, organizer report.
+- Three bounded conditions:
+  1. a stored review renders an inert local DOM indicator in a second account;
+  2. an attendee can set an organizer-controlled ticket tier and price;
+  3. the same ticket can be checked in twice.
+- Patched build encodes review text, rejects forbidden ticket fields, and performs
+  a one-time atomic check-in transition.
+- Tests: `apps/eventpass/tests/e2e.php`, 25 checks per variant.
+- The DOM payload is inert (`onerror` sets a `data-` attribute); no network call.
+
+## Theme status
+
+All three VAPT targets are implemented, packaged, and tested against vulnerable
+and patched builds. What remains is not implementation of the three targets:
+a blind student pilot, cross-target difficulty calibration, and the formal
+release checklist (ROE process, per-group distribution record, mentor dry run).
+
 ## Not built yet
 
-- EventPass (feature 004): stored local DOM indicator, forbidden ticket property,
-  duplicate check-in, patched retest, package, pilot.
+- Blind pilot and difficulty calibration across the three targets.
+- Remote fallback deployment guidance for devices that fail the local pilot.
+- Optional Apache sidecar variant for KampusMart (see `docs/DECISIONS.md`).
 - Cross-target difficulty calibration and blind pilot.
 - Optional Apache sidecar for KampusMart: deliberately not used. The legacy file
   service reproduces the bounded file-read lesson without a privileged container

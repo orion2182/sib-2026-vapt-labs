@@ -2,9 +2,9 @@
 
 Repository publik ini adalah **kontrak pembangunan**, bukan paket mahasiswa. Final project SIB memiliki **3 kelompok VAPT**, masing-masing mendapat aplikasi berbeda: KampusMart, PerpusDigital, dan EventPass. Penilaian mengikuti **PTES**. Mahasiswa harus memperoleh tanda tangan pada Rules of Engagement (ROE) sebelum pengujian aktif. Kalender: 20 November–23 Desember 2026. Dokumen program lengkap ada di [repo perencanaan](https://github.com/orion2182/sib-2026-cybersecurity-final-project).
 
-**Status per 10 November 2026:** Spec Kit 1.2.3, integrasi OpenCode/Codex, konstitusi, empat spesifikasi, dan referensi sudah ada. **Aplikasi, image Docker, fixture, build patched, dan pilot belum dibuat.** Jangan menganggap file `apps/*/README.md` sebagai aplikasi yang berjalan.
+**Status per 10 November 2026:** 3 target VAPT dan harness PHP/PowerShell telah dibangun, diuji pada build rentan dan patched, dikemas, serta menjalani dry pilot berbantuan agen. Pilot buta manusia dan pemeriksaan rilis masih diperlukan. Lihat `docs/BUILD-STATUS.md` dan `../README-TRANSFER.md` pada salinan lengkap.
 
-## Tiga target yang harus dibangun
+## Tiga target yang tersedia
 
 | Target | Alur normal | Fokus pengujian yang dirancang | Kriteria retest |
 | --- | --- | --- | --- |
@@ -25,33 +25,23 @@ Target harus berbeda dalam domain, data, route, dan temuan. Satu kelompok meneri
 | `specs/003-perpusdigital-target/spec.md` | Kontrak PerpusDigital |
 | `specs/004-eventpass-target/spec.md` | Kontrak EventPass |
 | `docs/reference/` | Snapshot riset, draft pertanyaan, kartu target, PDF awal; **materi pembangun** |
-| `apps/` | Lokasi implementasi tiga aplikasi |
+| `apps/` | Implementasi tiga aplikasi |
 | `.opencode/commands/` | Perintah Spec Kit untuk OpenCode |
-| `scripts/select_feature.py` | Memilih fitur aktif di laptop lokal |
+| `scripts/select-feature.ps1` | Pemilih fitur di Windows tanpa Python; `scripts/select_feature.py` opsional |
 
-## Mulai di laptop lain
+## Menjalankan dan mengembangkan di Windows
 
-Prasyarat awal: Git, Python 3.11+, dan OpenCode. Docker/Compose baru diperlukan saat implementasi yang dipilih di tahap rencana memerlukannya. Jalankan dari root repo ini:
+Salinan lengkap dari flashdisk memiliki `README-TRANSFER.md` di direktori induk. Jalankan lab dari disk lokal Windows dengan PowerShell 5.1+ dan PHP 8.1+; **Python dan Docker tidak diperlukan** untuk implementasi sekarang. Instruksi menjalankan, menguji, dan mengemas kasus ada di `docs/WINDOWS-SETUP.md` dan `docs/BUILD-STATUS.md`.
 
-```bash
-git clone https://github.com/orion2182/sib-2026-vapt-labs.git
-cd sib-2026-vapt-labs
-python3 scripts/select_feature.py 001-shared-lab-harness
+Untuk perubahan spesifikasi di OpenCode, jalankan dari root repo ini:
+
+```powershell
+.\scripts\select-feature.ps1 --list
+.\scripts\select-feature.ps1 002-kampusmart-target
 opencode
 ```
 
-Jika memakai Windows, `py -3 scripts/select_feature.py 001-shared-lab-harness` dapat menggantikan `python3`. Perintah Spec Kit sudah tersimpan di `.opencode/commands/`; tidak perlu menjalankan `specify init` lagi. `AGENTS.md` dimuat oleh OpenCode. Di chat OpenCode, jalankan secara bertahap:
-
-```text
-/speckit.plan
-/speckit.checklist
-/speckit.tasks
-/speckit.analyze
-/speckit.implement
-/speckit.converge
-```
-
-Perintah di atas adalah perintah **chat OpenCode**, bukan shell. Spesifikasi fitur sudah ada, jadi jangan menjalankan `/speckit.specify` kecuali mengubah ruang lingkup. Untuk berpindah target, jalankan `python3 scripts/select_feature.py --list`, pilih nama fitur, lalu mulai sesi baru agar konteks fitur tepat. Urutan pembangunan: harness bersama → KampusMart → PerpusDigital → EventPass → pilot buta ketiganya. [Referensi integrasi OpenCode Spec Kit](https://github.github.com/spec-kit/integrations/opencode.html).
+Perintah `/speckit.plan`, `/speckit.checklist`, `/speckit.tasks`, `/speckit.analyze`, `/speckit.implement`, dan `/speckit.converge` dipakai **di chat OpenCode** ketika mengubah fitur, bukan untuk menjalankan lab. `scripts/select_feature.py` tersedia hanya sebagai alternatif jika Python memang terpasang. Paket peserta harus dibuat melalui perintah packaging dan diperiksa sebelum dibagikan; direktori builder ini memuat bahan instruktur.
 
 ## Gerbang sebelum paket mahasiswa dirilis
 

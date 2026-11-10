@@ -63,16 +63,12 @@ and patched builds. What remains is not implementation of the three targets:
 a blind student pilot, cross-target difficulty calibration, and the formal
 release checklist (ROE process, per-group distribution record, mentor dry run).
 
-## Not built yet
+## Remaining before release
 
-- Blind pilot and difficulty calibration across the three targets.
-- Remote fallback deployment guidance for devices that fail the local pilot.
-- Optional Apache sidecar variant for KampusMart (see `docs/DECISIONS.md`).
-- Cross-target difficulty calibration and blind pilot.
-- Optional Apache sidecar for KampusMart: deliberately not used. The legacy file
-  service reproduces the bounded file-read lesson without a privileged container
-  or a real CVE, which the architecture document allows as an optional sidecar.
-  See `docs/DECISIONS.md`.
+- Pilot buta manusia pada laptop perwakilan dan kalibrasi tingkat kesulitan; dry pilot agen sudah dilakukan (`docs/PILOT-BLIND-2026-11-10.md`).
+- Pemeriksaan ROE, distribusi per kelompok, dan mentor dry run.
+- Fallback mentor/remote untuk laptop yang gagal menjalankan target lokal.
+- Apache sidecar KampusMart bersifat opsional dan tidak dipakai pada implementasi PHP lokal; lihat `docs/DECISIONS.md`.
 
 ## How to verify the implemented part
 

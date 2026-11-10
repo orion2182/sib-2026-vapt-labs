@@ -21,12 +21,6 @@
 
 ## OpenCode handoff
 
-- The repository contains specifications, not runnable targets. Implement the shared
-  harness first, then KampusMart, PerpusDigital, and EventPass as separate apps. Preserve
-  the accepted 20 November–23 December 2026 calendar and PTES questions.
-- OpenCode reads this file automatically when started from the repository root. Use
-  `python3 scripts/select_feature.py --list` to see available specs and select one before
-  invoking interactive `/speckit.plan`, `/speckit.tasks`, and `/speckit.implement` commands.
-- A completed target requires normal-flow, bounded-proof, reset, patched-retest,
-  isolation, and measured-resource evidence. Do not declare a spec or empty app folder a
-  finished lab.
+- Tiga target dan harness sudah diimplementasikan. Gunakan `docs/BUILD-STATUS.md` dan `docs/WINDOWS-SETUP.md` untuk menjalankan uji; kerjakan pilot buta manusia, kalibrasi, dan rilis peserta berikutnya. Pertahankan kalender 20 November–23 Desember 2026 dan pertanyaan PTES.
+- OpenCode membaca file ini saat dijalankan dari root repo. Pada Windows tanpa Python, gunakan `.\scripts\select-feature.ps1 --list` dan pilih fitur sebelum perintah Spec Kit interaktif. `scripts/select_feature.py` hanya alternatif.
+- Perubahan target harus tetap lulus alur normal, bukti terbatas, reset, retest patched, isolasi paket, dan pemeriksaan resource. Dry pilot agen tidak menggantikan pilot manusia.

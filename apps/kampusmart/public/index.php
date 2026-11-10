@@ -236,7 +236,6 @@ switch (true) {
         $who = lab_require_actor($pdo);
         $invoiceId = (int) ($_GET['id'] ?? 0);
         $result = km_invoice_for($pdo, $who, $invoiceId, $variant);
-        $crossOwner = $result['ok'] && (int) $result['invoice']['user_id'] !== (int) $who['id'];
         lab_evidence(
             $pdo,
             $who,
@@ -244,7 +243,7 @@ switch (true) {
             'invoice',
             (string) $invoiceId,
             $result['ok'] ? 'allowed' : 'denied',
-            ['reason' => $result['reason'] ?? null, 'cross_owner' => $crossOwner]
+            ['reason' => $result['reason'] ?? null]
         );
         if (!$result['ok']) {
             lab_json(['error' => $result['reason'], 'request_id' => lab_request_id()], $result['status']);
@@ -276,8 +275,6 @@ switch (true) {
             [
                 'code' => strtoupper((string) ($body['code'] ?? '')),
                 'reason' => $result['reason'] ?? null,
-                'coupon_uses' => $result['coupon_uses'] ?? null,
-                'max_uses' => $result['max_uses'] ?? null,
             ]
         );
         if (!$result['ok']) {
@@ -290,6 +287,19 @@ switch (true) {
             'coupon_uses' => $result['coupon_uses'],
             'max_uses' => $result['max_uses'],
             'request_id' => lab_request_id(),
+        ]);
+        break;
+
+    case $path === '/legacy/info' && $method === 'GET':
+        lab_json([
+            'service' => 'kampusmart-legacy-docs',
+            'version' => '1.4.2',
+            'document_root' => '/svc/public',
+            'path_handling' => $variant === 'vulnerable'
+                ? 'requested name is joined to the document root'
+                : 'requested name is resolved and confined to the document root',
+            'allowed_names' => 'A-Z a-z 0-9 . _ -',
+            'public_documents' => ['welcome.txt', 'panduan-pengembalian.txt'],
         ]);
         break;
 

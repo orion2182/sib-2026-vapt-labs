@@ -164,6 +164,12 @@ function pd_update_book(PDO $pdo, array $actor, int $bookId, array $fields, stri
     if ($variant !== 'vulnerable' && ($actor['role'] ?? '') !== 'staff') {
         return ['ok' => false, 'status' => 403, 'reason' => 'staff_role_required'];
     }
+    $allowed = ['book_id', 'title', 'author', 'shelf'];
+    foreach (array_keys($fields) as $key) {
+        if (!in_array($key, $allowed, true)) {
+            return ['ok' => false, 'status' => 400, 'reason' => 'unknown_metadata_field', 'field' => $key];
+        }
+    }
     $book = pd_book($pdo, $bookId);
     if (!$book) {
         return ['ok' => false, 'status' => 404, 'reason' => 'book_not_found'];
@@ -192,7 +198,9 @@ function pd_layout(string $title, string $body, ?array $actor): void
         . '<link rel="stylesheet" href="/assets/style.css"></head><body>'
         . '<header class="top"><a class="brand" href="/catalog">PerpusDigital</a>'
         . '<nav><a href="/catalog">Katalog</a><a href="/loans">Pinjaman</a>'
-        . '<a href="/fines">Denda</a>' . $nav . '</nav></header>'
+        . '<a href="/fines">Denda</a>'
+        . (($actor['role'] ?? '') === 'staff' ? '<a href="/staff/books">Kelola buku</a><a href="/staff/loans">Semua pinjaman</a>' : '')
+        . $nav . '</nav></header>'
         . '<main>' . $body . '</main>'
         . '<footer>Lab sintetis SIB 2026 · build ' . lab_e((string) (lab_build()['build_id'] ?? 'dev'))
         . ' · <span class="variant">' . lab_e(lab_variant()) . '</span></footer>'

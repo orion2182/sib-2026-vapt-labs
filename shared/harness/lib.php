@@ -91,20 +91,49 @@ function lab_seed(PDO $pdo): void
     $seed($pdo);
 }
 
-/** Destroy runtime state and reseed. This is the documented reset path. */
+/**
+ * Reseed runtime state while preserving the evidence trail.
+ *
+ * Students must submit evidence IDs and then reset. Deleting the trail would
+ * make submitted IDs unverifiable, so existing rows are archived and restored
+ * into the fresh database, and the reset itself is recorded.
+ */
 function lab_reset(): void
 {
     $path = lab_db_path();
+    $archived = [];
+    if (is_file($path)) {
+        try {
+            $old = new PDO('sqlite:' . $path, null, null, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            ]);
+            $archived = $old->query('SELECT * FROM evidence_events ORDER BY rowid')->fetchAll();
+            $old = null;
+        } catch (Throwable $e) {
+            $archived = [];
+        }
+    }
+
     foreach ([$path, $path . '-wal', $path . '-shm'] as $file) {
         if (is_file($file)) {
             unlink($file);
         }
     }
-    $evidence = lab_state_dir() . DIRECTORY_SEPARATOR . 'evidence.ndjson';
-    if (is_file($evidence)) {
-        unlink($evidence);
+
+    $pdo = lab_db(); // recreates and seeds
+    $insert = $pdo->prepare(
+        'INSERT OR REPLACE INTO evidence_events
+         (id, request_id, ts_utc, actor, role, action, object_type, object_id, result, detail)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    );
+    foreach ($archived as $row) {
+        $insert->execute([
+            $row['id'], $row['request_id'], $row['ts_utc'], $row['actor'], $row['role'],
+            $row['action'], $row['object_type'], $row['object_id'], $row['result'], $row['detail'],
+        ]);
     }
-    lab_db(); // recreates and seeds
+    lab_evidence($pdo, null, 'lab.reset', 'lab', 'harness', 'allowed', ['restored_events' => count($archived)]);
 }
 
 function lab_request_id(): string

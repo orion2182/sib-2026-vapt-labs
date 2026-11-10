@@ -157,13 +157,13 @@ function Get-RunningPid {
     return $null
 }
 
-function Wait-Healthy([int]$TimeoutSeconds = 20, [string]$ExpectedBuild = '') {
+function Wait-Healthy([int]$TimeoutSeconds = 20, [string]$ExpectedBuildId = '') {
     $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
     while ((Get-Date) -lt $deadline) {
         try {
             $health = Invoke-RestMethod -Uri "$baseUrl/healthz" -TimeoutSec 3
             if ($health.status -eq 'ok') {
-                if ($ExpectedBuild -ne '' -and -not (([string]$health.build_id).StartsWith($ExpectedBuild + '-'))) {
+                if ($ExpectedBuildId -ne '' -and [string]$health.build_id -ne $ExpectedBuildId) {
                     throw "Another lab instance answered at $baseUrl (build '$($health.build_id)'). Stop it or choose another port."
                 }
                 return $health
@@ -205,7 +205,12 @@ function Invoke-Start {
         -RedirectStandardError (Join-Path $runDir 'server.err.log') `
         -WindowStyle Hidden -PassThru
     Set-Content -Path $pidFile -Value $process.Id -NoNewline
-    $health = Wait-Healthy -ExpectedBuild $distName
+    $expectedBuildId = ''
+    $buildFile = Join-Path $dist 'build.json'
+    if (Test-Path $buildFile) {
+        $expectedBuildId = [string](Get-Content $buildFile -Raw | ConvertFrom-Json).build_id
+    }
+    $health = Wait-Healthy -ExpectedBuildId $expectedBuildId
     Write-Output "Started $distName (PID $($process.Id)) at $baseUrl"
     Write-Output "  status:  $($health.status)"
     Write-Output "  variant: $($health.variant)"
@@ -227,10 +232,8 @@ function Invoke-Stop {
 function Invoke-Reset {
     $wasRunning = [bool](Get-RunningPid)
     if ($wasRunning) { Invoke-Stop }
-    foreach ($pattern in @('lab.sqlite', 'lab.sqlite-wal', 'lab.sqlite-shm', 'evidence.ndjson')) {
-        $path = Join-Path $runDir $pattern
-        if (Test-Path $path) { Remove-Item $path -Force }
-    }
+    # lab_reset() archives and restores the evidence trail itself, so do not
+    # delete the database here. Only clear volatile session files.
     $sessions = Join-Path $runDir 'sessions'
     if (Test-Path $sessions) { Get-ChildItem $sessions -File | Remove-Item -Force }
     $php = Get-PhpPath

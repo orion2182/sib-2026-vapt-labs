@@ -126,7 +126,11 @@ switch (true) {
         $rows = '';
         foreach ($tickets as $t) {
             $rows .= '<tr><td>' . (int) $t['id'] . '</td><td>' . lab_e($t['event_title']) . '</td><td>' . lab_e($t['code'])
-                . '</td><td>' . lab_e($t['display_name']) . '</td><td>' . lab_e($t['tier']) . '</td><td>'
+                . '</td><td><form method="post" action="/tickets/update" class="inline">'
+                . '<input type="hidden" name="ticket_id" value="' . (int) $t['id'] . '">'
+                . '<input type="text" name="display_name" value="' . lab_e($t['display_name']) . '" maxlength="80">'
+                . ' <button type="submit">Simpan nama</button></form></td>'
+                . '<td>' . lab_e($t['tier']) . '</td><td>'
                 . ep_money((int) $t['price_cents']) . '</td><td>' . lab_e($t['status']) . '</td></tr>';
         }
         ep_layout('Tiket', '<h1>Tiket saya</h1><table><thead><tr><th>ID</th><th>Acara</th><th>Kode</th><th>Nama</th><th>Tier</th><th>Harga</th><th>Status</th></tr></thead><tbody>'

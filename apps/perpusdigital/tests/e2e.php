@@ -160,6 +160,10 @@ if ($variant === 'vulnerable') {
 }
 
 // --- Staff workflows ------------------------------------------------------
+check('staff sees the metadata UI', (http('GET', '/staff/books', null, $jarS)['status']) === 200);
+check('member cannot open the metadata UI', (http('GET', '/staff/books', null, $jarN)['status']) === 403);
+$unknownField = http('POST', '/staff/book/update', ['book_id' => 101, 'field' => 'title', 'value' => 'x'], $jarS);
+check('unknown metadata fields are rejected', $unknownField['status'] === 400, 'status ' . $unknownField['status']);
 check('staff sees all loans', (http('GET', '/staff/loans', null, $jarS)['status']) === 200);
 check('member cannot use staff loan listing', (http('GET', '/staff/loans', null, $jarN)['status']) === 403);
 

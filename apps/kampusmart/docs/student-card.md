@@ -64,23 +64,27 @@ fungsi normal masih bekerja? Apa keterbatasan pengujian akhir?
 ## Pertanyaan khusus target
 
 **Q8 — Analisis layanan dokumen.** Layanan dokumen lama menyajikan berkas dari
-satu direktori publik. Apa janji konfigurasinya, kondisi konfigurasi apa yang
-membuat permintaan keluar dari direktori itu, dan bukti apa yang membedakan
-kandidat dari pembacaan yang benar-benar terbukti? Batasi pembacaan pada satu
-marker sintetis yang disetujui.
+satu direktori publik. Konfigurasi yang dapat diamati tersedia pada
+`/legacy/info`; dokumen publik yang benar-benar ada tercantum di `welcome.txt`.
+Apa janji konfigurasinya, kondisi apa yang membuat permintaan keluar dari
+direktori itu, dan bukti apa yang membedakan kandidat dari pembacaan yang
+benar-benar terbukti? Batasi pembacaan pada satu marker sintetis yang disetujui.
 
 **Q9 — Layanan.** Dapatkah tim memperoleh **satu marker file sintetis** dari
 lokasi yang semestinya tertutup? Catat kondisi normal, request tersanitasi, hasil
 aktual, dan alasan berhenti setelah marker diperoleh.
 
 **Q10 — Invoice.** Apakah akun pelanggan B dapat membaca **satu invoice sintetis
-milik pelanggan A** pada instance tim yang sama? Bandingkan respons invoice
-sendiri, invoice pelanggan lain, dan hasil yang seharusnya. Catat marker invoice
-dan ID bukti.
+milik pelanggan A** pada instance tim yang sama? Gunakan invoice yang **sudah
+ada** milik pelanggan lain, bukan invoice yang Anda buat sendiri. Bandingkan
+respons invoice sendiri, invoice pelanggan lain, dan hasil yang seharusnya.
+Catat marker invoice dan ID bukti.
 
 **Q11 — Kupon.** Apakah satu kupon dapat digunakan ketika aturan bisnis
-menyatakan penggunaannya sudah habis? Tulis invariant, state awal, satu tindakan,
-state akhir, dan ID perubahan sintetis. Reset setelah bukti dicatat.
+menyatakan penggunaannya sudah habis? Uji **aplikasi berulang pada pesanan
+pending yang sama**; jangan membuat pesanan baru untuk membuktikan kondisi ini.
+Tulis invariant, state awal, satu tindakan, state akhir, dan ID perubahan
+sintetis. Ekspor atau catat ID bukti sebelum reset.
 
 <details><summary>Petunjuk konsep secukupnya</summary>
 

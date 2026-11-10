@@ -74,7 +74,7 @@ switch (true) {
                 }
             }
             lab_evidence($pdo, $actor, 'catalog.search', 'query', substr($term, 0, 80), 'allowed', [
-                'results' => count($books), 'private_rows' => $private,
+                'results' => count($books),
             ]);
         } else {
             $books = $pdo->query("SELECT id,sku,title,author,shelf,copies,metadata_note FROM books WHERE visibility='public' ORDER BY title")->fetchAll();
@@ -218,6 +218,30 @@ switch (true) {
             lab_json(['error' => $result['reason'], 'request_id' => lab_request_id()], $result['status']);
         }
         lab_json(['ok' => true, 'book' => pd_book($pdo, $bookId), 'request_id' => lab_request_id()]);
+        break;
+
+    case $path === '/staff/books' && $method === 'GET':
+        $who = lab_require_actor($pdo);
+        lab_require_role($who, 'staff');
+        $books = $pdo->query('SELECT * FROM books ORDER BY title')->fetchAll();
+        if (pd_wants_json()) {
+            lab_json(['books' => $books]);
+        }
+        $rows = '';
+        foreach ($books as $b) {
+            $rows .= '<tr><td>' . (int) $b['id'] . '</td><td>' . lab_e($b['sku']) . '</td><td>'
+                . '<form method="post" action="/staff/book/update" class="inline">'
+                . '<input type="hidden" name="book_id" value="' . (int) $b['id'] . '">'
+                . '<input type="text" name="title" value="' . lab_e($b['title']) . '" maxlength="120">'
+                . ' <input type="text" name="author" value="' . lab_e($b['author']) . '" maxlength="80">'
+                . ' <input type="text" name="shelf" value="' . lab_e($b['shelf']) . '" maxlength="12">'
+                . ' <button type="submit">Simpan</button></form></td>'
+                . '<td>' . lab_e($b['visibility']) . '</td></tr>';
+        }
+        pd_page('Kelola buku', '<h1>Kelola metadata buku</h1>'
+            . '<p class="count">Fungsi ini hanya ditampilkan untuk petugas. Uji apakah server menegakkan peran yang sama.</p>'
+            . '<table><thead><tr><th>ID</th><th>SKU</th><th>Metadata</th><th>Visibilitas</th></tr></thead><tbody>'
+            . $rows . '</tbody></table>', $who);
         break;
 
     case $path === '/staff/loans' && $method === 'GET':

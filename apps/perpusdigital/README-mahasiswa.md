@@ -49,6 +49,7 @@ Buka `http://127.0.0.1:8082/`.
 | POST | `/borrow`, `/return` | Pinjam dan kembali |
 | GET | `/loans`, `/fines` | Pinjaman dan denda |
 | POST | `/fines/waive` | Pembebasan denda |
+| GET | `/staff/books` | UI kelola metadata (petugas) |
 | POST | `/staff/book/update` | Ubah metadata (petugas) |
 | GET | `/staff/loans` | Semua pinjaman (petugas) |
 | GET | `/healthz` | Health check |

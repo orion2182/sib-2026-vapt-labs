@@ -82,9 +82,11 @@ Kredensial ini hanya berlaku pada instance lokal dan tidak membuka sistem nyata.
 | POST | `/cart/add`, `/order` | Pesanan |
 | GET | `/orders`, `/invoice?id=` | Riwayat dan invoice |
 | POST | `/coupon/apply` | Kupon (`code`, `order_id`) |
+| GET | `/legacy/info` | Konfigurasi layanan dokumen lama |
 | GET | `/legacy/files?name=` | Layanan dokumen lama |
 | GET | `/staff/orders` | Daftar pesanan (staf) |
 | POST | `/staff/order/status` | Ubah status (staf) |
+| GET | `/staff/evidence` | Log bukti (staf) |
 | GET | `/healthz` | Health check |
 
 ## Bukti yang harus diserahkan

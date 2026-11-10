@@ -1,0 +1,44 @@
+﻿[
+    {
+        "target":  "kampusmart",
+        "variant":  "vulnerable",
+        "port":  8401,
+        "start_seconds":  1.83,
+        "reset_seconds":  1.27,
+        "rss_mb":  21.2,
+        "private_mb":  9.2,
+        "cpu_percent_one_core":  0,
+        "dist_mb":  0.14,
+        "db_kb":  60,
+        "host_ram_gb":  7.8,
+        "php":  "8.2.4"
+    },
+    {
+        "target":  "perpusdigital",
+        "variant":  "vulnerable",
+        "port":  8402,
+        "start_seconds":  1.08,
+        "reset_seconds":  1.18,
+        "rss_mb":  21,
+        "private_mb":  9.2,
+        "cpu_percent_one_core":  0,
+        "dist_mb":  0.1,
+        "db_kb":  36,
+        "host_ram_gb":  7.8,
+        "php":  "8.2.4"
+    },
+    {
+        "target":  "eventpass",
+        "variant":  "vulnerable",
+        "port":  8403,
+        "start_seconds":  1.09,
+        "reset_seconds":  1.15,
+        "rss_mb":  21,
+        "private_mb":  9.3,
+        "cpu_percent_one_core":  0,
+        "dist_mb":  0.11,
+        "db_kb":  48,
+        "host_ram_gb":  7.8,
+        "php":  "8.2.4"
+    }
+]

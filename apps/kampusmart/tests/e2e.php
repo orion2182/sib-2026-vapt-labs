@@ -163,8 +163,14 @@ $staffInvoice = http('GET', '/invoice?id=7001', null, $jarS);
 check('staff may read a customer invoice', $staffInvoice['status'] === 200, 'status ' . $staffInvoice['status']);
 
 // --- Bounded condition 1: legacy document service traversal --------------
+$info = http('GET', '/legacy/info');
+check('legacy service exposes observable configuration', $info['status'] === 200 && ($info['json']['service'] ?? '') === 'kampusmart-legacy-docs');
+
 $publicDoc = http('GET', '/legacy/files?name=welcome.txt');
 check('legacy service serves a public document', $publicDoc['status'] === 200 && str_contains($publicDoc['body'], 'Selamat datang'));
+
+$guide = http('GET', '/legacy/files?name=panduan-pengembalian.txt');
+check('legacy service serves the listed guide', $guide['status'] === 200 && str_contains($guide['body'], 'Panduan pengembalian'));
 
 $marker = http('GET', '/legacy/files?name=' . rawurlencode('../private/marker-km01.txt'));
 if ($variant === 'vulnerable') {

@@ -55,14 +55,19 @@ Apa yang membedakan encoding yang benar dari sekadar menghapus karakter, dan
 bagaimana Anda membuktikan indikator hanya lokal?
 
 **Q9 — Ulasan.** Dapatkah satu ulasan tersimpan menghasilkan **indikator DOM lokal**
-di browser akun uji kedua? Lampirkan cuplikan HTML tersanitasi, akun, dan bukti
-tidak ada permintaan jaringan keluar.
+di browser akun uji kedua? Indikator berarti perubahan DOM yang dapat diamati
+(mis. elemen atau atribut baru) tanpa permintaan jaringan. Lampirkan cuplikan HTML
+respons tersanitasi, akun, dan alasan struktural mengapa payload tidak dapat
+menghubungi jaringan. Jika browser otomatis tidak tersedia, analisis HTML respons
+dan isi payload adalah bukti yang sah; sebutkan batasnya.
 
 **Q10 — Properti tiket.** Dapatkah akun peserta mengubah **satu properti tiket yang
 dikendalikan penyelenggara**? Bandingkan field yang diizinkan dengan yang ditolak.
 
-**Q11 — Check-in.** Dapatkah satu tiket dicatat check-in **dua kali**? Tulis
-invariant satu-kali, state awal, dua tindakan, state akhir, dan ID bukti.
+**Q11 — Check-in.** Dapatkah satu tiket dicatat check-in **dua kali**? Bedakan
+`tickets.status` (`checked_in`) dari jumlah baris catatan check-in; invariant
+satu-kali berarti maksimal **satu baris check-in** per tiket. Tulis state awal,
+dua tindakan, state akhir, dan ID bukti.
 
 <details><summary>Petunjuk konsep secukupnya</summary>
 

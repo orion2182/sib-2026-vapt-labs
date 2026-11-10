@@ -50,7 +50,8 @@ Buka `http://127.0.0.1:8083/`.
 | POST | `/tickets/update` | Ubah field tiket (`ticket_id`, field) |
 | POST | `/reviews` | Simpan ulasan (`event_id`, `body`) |
 | POST | `/checkin` | Check-in (`ticket_code`, penyelenggara) |
-| GET | `/organizer/event?id=` | Laporan acara |
+| GET | `/organizer/event?id=` | Laporan acara (JSON) |
+| GET | `/organizer/evidence` | Log bukti (penyelenggara) |
 | GET | `/healthz` | Health check |
 
 ## Bukti yang diserahkan

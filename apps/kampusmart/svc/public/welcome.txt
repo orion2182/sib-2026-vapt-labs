@@ -4,4 +4,7 @@ Dokumen publik yang tersedia:
 - welcome.txt
 - panduan-pengembalian.txt
 
+Layanan memetakan nama dokumen relatif terhadap direktori publiknya.
+Informasi konfigurasi tersedia pada /legacy/info.
+
 Layanan ini hanya untuk arsip sintetis lab SIB 2026.

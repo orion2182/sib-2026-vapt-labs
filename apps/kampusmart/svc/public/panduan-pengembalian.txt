@@ -1,0 +1,7 @@
+Panduan pengembalian barang KampusMart
+
+1. Buka halaman pesanan dan pilih invoice terkait.
+2. Ajukan pengembalian maksimal 7 hari setelah barang diterima.
+3. Barang harus dalam kondisi lengkap.
+
+Dokumen ini fiktif dan hanya untuk lab SIB 2026.

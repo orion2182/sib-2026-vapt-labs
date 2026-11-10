@@ -1,7 +1,7 @@
 # Kartu target VAPT — PerpusDigital
 
 **Untuk:** kelompok VAPT-2 saja. **Kerangka kerja:** PTES, Q1–Q15.
-**Build:** lihat `build.json`. **Instance:** `127.0.0.1` pada port yang diberikan.
+**Build:** lihat `build.json`. **Instance:** `127.0.0.1`, default port 8082 atau port yang diberikan instruktur.
 
 Semua data sintetis. Jangan menguji di luar instance kelompok Anda.
 
@@ -64,8 +64,10 @@ seharusnya tidak terlihat oleh anggota? Catat input tersanitasi, jumlah hasil,
 marker, dan alasan berhenti.
 
 **Q10 — Fungsi petugas.** Apakah akun anggota dapat mengubah **satu field metadata
-buku** melalui fungsi yang seharusnya hanya untuk petugas? Bandingkan kontrol UI
-dengan penegakan di server.
+buku** melalui fungsi yang seharusnya hanya untuk petugas? UI staf tersedia di
+`/staff/books` setelah login sebagai petugas; anggota tidak melihat tautannya,
+tetapi route dapat diuji langsung. Bandingkan kontrol UI dengan penegakan di
+server.
 
 **Q11 — Denda.** Dapatkah satu denda dibebaskan **sebelum** buku dikembalikan?
 Tulis invariant, state awal, satu tindakan, state akhir, dan ID bukti.
@@ -74,7 +76,8 @@ Tulis invariant, state awal, satu tindakan, state akhir, dan ID bukti.
 
 Periksa **pembentukan query dan parameterisasi**, **otorisasi fungsi di server
 bukan hanya di UI**, serta **validasi state dan transaksi** pada alur denda.
-Perubahan respons saja bukan bukti penuh.
+Jika pencarian menolak input, periksa validasi sintaks aplikasi dan gunakan
+bentuk yang tetap valid secara sintaks. Perubahan respons saja bukan bukti penuh.
 
 </details>
 

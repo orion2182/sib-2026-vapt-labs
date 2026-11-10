@@ -262,6 +262,9 @@ function Invoke-Package {
     New-Item -ItemType Directory -Path $staging -Force | Out-Null
     Get-ChildItem $dist -Force | Where-Object { $_.Name -ne 'run' } |
         Copy-Item -Destination $staging -Recurse -Force
+    # Instructor e2e tests encode the exact proofs and payloads. Never ship them.
+    $testDir = Join-Path $staging 'app\tests'
+    if (Test-Path $testDir) { Remove-Item $testDir -Recurse -Force }
     Compress-Archive -Path (Join-Path $staging '*') -DestinationPath $zip -CompressionLevel Optimal
     Remove-Item $staging -Recurse -Force
     $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLowerInvariant()

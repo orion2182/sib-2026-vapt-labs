@@ -18,6 +18,26 @@ No container isolation is claimed; isolation is by loopback binding, one target
 per laptop, and separate packages. If a future requirement needs container-level
 isolation, a Compose wrapper can be added without changing domain code.
 
+## D-003: The PHP packages are grey-box, not black-box
+
+**Date:** 2026-11-10
+**Status:** accepted for the first release
+
+**Context.** PHP ships as source. A participant can unzip the package and read
+`app/`, including the fixture and the flawed branch. A container image would hide
+the filesystem layout but not the behaviour, and the architecture document already
+notes that a local image can be inspected.
+
+**Decision.** Treat every VAPT package as grey-box. Grading requires a reproducible
+request, the resulting state, and the `evidence id` from the lab log, not only a
+marker value. The marker is synthetic evidence, not the answer key. Instructor
+e2e tests are excluded from packages.
+
+**Consequences.** Source review is a legitimate route to a hypothesis, but a
+finding without a demonstrated request and evidence id does not count. If a future
+cohort needs black-box conditions, add a container build without changing domain
+code.
+
 ## D-002: KampusMart uses a bounded legacy document service, not an Apache CVE
 
 **Date:** 2026-11-10

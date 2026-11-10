@@ -17,7 +17,6 @@ bersifat sintetis. Paket ini hanya untuk instance lokal kelompok VAPT-2.
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action start -Port 8082
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action health -Port 8082
-powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action test -Port 8082
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action reset -Port 8082
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action stop
 ```

@@ -44,10 +44,10 @@ powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action stop
 
 # Reset ke fixture awal (akun, pesanan, kupon, marker, log bukti)
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action reset -Port 8081
-
-# Uji fungsi normal dan batas pembuktian
-powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action test -Port 8081
 ```
+
+Pengujian otomatis (`-Action test`) hanya tersedia pada salinan instruktur; paket
+peserta tidak memuat suite tersebut.
 
 `-Target kampusmart -Variant vulnerable` boleh ditambahkan secara eksplisit.
 Hanya satu target yang boleh berjalan pada satu laptop.

@@ -17,7 +17,6 @@ dan marker bersifat sintetis. Paket ini hanya untuk instance lokal kelompok VAPT
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action start -Port 8083
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action health -Port 8083
-powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action test -Port 8083
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action reset -Port 8083
 powershell -ExecutionPolicy Bypass -File .\tools\lab.ps1 -Action stop
 ```

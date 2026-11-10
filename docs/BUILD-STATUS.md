@@ -25,11 +25,26 @@ Updated 2026-11-10. This file records what actually runs, not what is planned.
 - Tests: `apps/kampusmart/tests/e2e.php`, 29 checks per variant.
 - Student package verified standalone on port 8085.
 - Pilot numbers: `docs/PILOT-2026-11-10.md`.
+- One-target-per-laptop is enforced by a port-in-use check and a build-id match
+  on the health response.
+
+### PerpusDigital (feature 003)
+
+- Normal flows: search, borrow, return, fine list, staff metadata update,
+  staff waiver of an eligible returned-loan fine.
+- Three bounded conditions:
+  1. search-term SQL injection exposes one private archive record and marker;
+  2. a member can change book metadata through a staff-only route;
+  3. a fine can be waived while its loan is still active.
+- Patched build uses a prepared statement, enforces the staff role on the server,
+  and requires a returned loan before an atomic waiver.
+- Tests: `apps/perpusdigital/tests/e2e.php`, 24 checks (vulnerable) and 25
+  (patched, including the member-forbidden check).
+- Port-conflict handling was added to `tools/lab.ps1` after a stale server on the
+  same port produced a false healthy reading.
 
 ## Not built yet
 
-- PerpusDigital (feature 003): search injection, staff metadata authorization,
-  premature fine waiver, patched retest, package, pilot.
 - EventPass (feature 004): stored local DOM indicator, forbidden ticket property,
   duplicate check-in, patched retest, package, pilot.
 - Cross-target difficulty calibration and blind pilot.

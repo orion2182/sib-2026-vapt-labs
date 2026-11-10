@@ -157,13 +157,19 @@ function Get-RunningPid {
     return $null
 }
 
-function Wait-Healthy([int]$TimeoutSeconds = 20) {
+function Wait-Healthy([int]$TimeoutSeconds = 20, [string]$ExpectedBuild = '') {
     $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
     while ((Get-Date) -lt $deadline) {
         try {
             $health = Invoke-RestMethod -Uri "$baseUrl/healthz" -TimeoutSec 3
-            if ($health.status -eq 'ok') { return $health }
+            if ($health.status -eq 'ok') {
+                if ($ExpectedBuild -ne '' -and -not (([string]$health.build_id).StartsWith($ExpectedBuild + '-'))) {
+                    throw "Another lab instance answered at $baseUrl (build '$($health.build_id)'). Stop it or choose another port."
+                }
+                return $health
+            }
         } catch {
+            if ($_.Exception.Message -like 'Another lab instance*') { throw }
             Start-Sleep -Milliseconds 350
         }
     }
@@ -176,6 +182,10 @@ function Invoke-Start {
     if ($existing) {
         Write-Output "Already running (PID $existing) at $baseUrl"
         return
+    }
+    $listener = Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue
+    if ($listener) {
+        throw "Port $Port is already in use (PID $(($listener | Select-Object -First 1).OwningProcess)). Stop the other lab instance or choose another port."
     }
     if (Test-Path $pidFile) { Remove-Item $pidFile -Force }
     New-Item -ItemType Directory -Path $runDir -Force | Out-Null
@@ -195,7 +205,7 @@ function Invoke-Start {
         -RedirectStandardError (Join-Path $runDir 'server.err.log') `
         -WindowStyle Hidden -PassThru
     Set-Content -Path $pidFile -Value $process.Id -NoNewline
-    $health = Wait-Healthy
+    $health = Wait-Healthy -ExpectedBuild $distName
     Write-Output "Started $distName (PID $($process.Id)) at $baseUrl"
     Write-Output "  status:  $($health.status)"
     Write-Output "  variant: $($health.variant)"

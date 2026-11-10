@@ -88,7 +88,7 @@ function Get-SourceDirty {
 function Write-Manifest([string]$Root) {
     $lines = New-Object System.Collections.Generic.List[string]
     $files = Get-ChildItem $Root -Recurse -File |
-        Where-Object { $_.FullName -notmatch '\\run\\' } |
+        Where-Object { $_.FullName -notmatch '\\run\\' -and $_.Name -ne 'manifest-sha256.txt' } |
         Sort-Object { $_.FullName.Substring($Root.Length).Replace('\', '/') }
     foreach ($file in $files) {
         $rel = $file.FullName.Substring($Root.Length).TrimStart('\').Replace('\', '/')
@@ -265,6 +265,8 @@ function Invoke-Package {
     # Instructor e2e tests encode the exact proofs and payloads. Never ship them.
     $testDir = Join-Path $staging 'app\tests'
     if (Test-Path $testDir) { Remove-Item $testDir -Recurse -Force }
+    # Recompute the manifest for the exact packaged file set.
+    Write-Manifest $staging | Out-Null
     Compress-Archive -Path (Join-Path $staging '*') -DestinationPath $zip -CompressionLevel Optimal
     Remove-Item $staging -Recurse -Force
     $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLowerInvariant()

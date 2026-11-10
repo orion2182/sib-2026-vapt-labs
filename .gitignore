@@ -20,6 +20,11 @@ htmlcov/
 node_modules/
 runtime-data/
 artifacts/
+instructor-private/
+holdout-private/
+secrets/
+*.pem
+*.key
 
 # Agent runtime state; generated Spec Kit skills remain tracked
 .agents/.cache/

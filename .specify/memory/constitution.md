@@ -51,7 +51,8 @@ and a remote fallback when the local pilot fails.
 
 ## Lab Constraints
 
-The source repository and instructor answer keys are private to builders. Participants
+This public builder repository contains the lab design. Instructor answer keys, secret
+seeds, and unreleased markers MUST remain outside the public repository. Participants
 receive a target-specific image/fixture, their target card, the common PTES workbook, and
 their approved ROE only. No production services, live campus systems, real credentials,
 or personal data may be included in fixtures. Apache CVE behavior, if retained, is isolated
